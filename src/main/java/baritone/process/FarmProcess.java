@@ -70,6 +70,7 @@ public final class FarmProcess extends BaritoneProcessHelper implements IFarmPro
             Items.WHEAT_SEEDS,
             Items.PUMPKIN_SEEDS,
             Items.POTATO,
+            Items.CACTUS,
             Items.CARROT
     );
 
@@ -87,6 +88,7 @@ public final class FarmProcess extends BaritoneProcessHelper implements IFarmPro
             Items.CARROT,
             Items.NETHER_WART,
             Items.REEDS,
+            Items.CACTUS,
             Item.getItemFromBlock(Blocks.CACTUS)
     );
 
@@ -118,6 +120,7 @@ public final class FarmProcess extends BaritoneProcessHelper implements IFarmPro
         BEETROOT((BlockCrops) Blocks.BEETROOTS),
         PUMPKIN(Blocks.PUMPKIN, state -> true),
         MELON(Blocks.MELON_BLOCK, state -> true),
+        CACTUS(Blocks.CACTUS , state -> true),
         NETHERWART(Blocks.NETHER_WART, state -> state.getValue(BlockNetherWart.AGE) >= 3),
         SUGARCANE(Blocks.REEDS, null) {
             @Override
